@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 using namespace std;
-int a, b, c, x, h, d;
+double a, b, c, x, h, d, x1, x2;
 
 int main() {
 	setlocale(0, "ukr");
@@ -14,14 +14,19 @@ int main() {
 	b = 1 - sqrt(3 / 3 + abs(tan(a * h * h) - sin(a * h)));
 
 	c = a * h * h * sin(b * h) + b * h * h * h * cos(a * h);
+	
+	d = b * 2 - 4 * a * c;
 
 	if (d == 0)
 	{
-		cout << "— данным значением h, уравнение имеет 1 корень" << endl;
+		x = -(b / 2 * a);
+		cout << "— данным значением h, уравнение имеет 1 корень: "<< x << "." << endl;
 	}
 	else if (d > 0)
 	{
-		cout << "— данным значением h, уравнение имеет 2 корн€" << endl;
+		x1 = -b + sqrt(d) / 2 * a;
+		x2 = -b - sqrt(d) / 2 * a;
+		cout << "— данным значением h, уравнение имеет 2 корн€: "<< x1 << " , " << x2 << "." << endl;
 	}
 	else
 	{

@@ -2,11 +2,15 @@
 using namespace std;
 int main()
 {
-	int d, t, k;
-	setlocale(0, "ukr");
-	cout << "¬ведiть k \n";
-	cin >> k;
-	d = k % 7; t = k / 7 + 1;
-	if (d == 0) { d = 7; t--; }
-	cout << "ƒень " << d << " “иждень " << t << "\n";
+	int n;
+	cout << "введ.номер\n";
+	cin >> n;
+	switch (n)
+	{
+	case 12: cout << "грудень"; break;
+	case 1: cout << "с≥чень"; break;
+	case 2: cout << "лютий"; break;
+	default: cout << "помилка";
+	}
+	return 0;
 }

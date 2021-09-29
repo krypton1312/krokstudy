@@ -13,8 +13,8 @@ int main()
 	{
 		y = cos(x);
 		
-		cout << setw(10) << " x" << setw(12) << setprecision(6) << "y" << endl << endl;
-		cout << setw(10) << x << setw(12) << setprecision(6) << y << endl << endl;
+		cout << setw(10) << " x" << setw(12) << setprecision(6) << "y" << endl;
+		cout << setw(10) << x << setw(12) << setprecision(6) << y << endl;
 
 	}
 	_getch();

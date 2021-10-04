@@ -15,5 +15,6 @@ int main()
 		f *= i;
 		cout << setw(4) << i << setw(10) << f << endl;
 	}
+
 	getchar();
 }

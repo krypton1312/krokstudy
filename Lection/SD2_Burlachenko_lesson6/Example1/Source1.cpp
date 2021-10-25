@@ -1,0 +1,2 @@
+От Ігор Жовтяк всем : 09 : 25 AM
+#include <iostream>using namespace std;//const int N=10000;int main(){	int* a,		int n;	cout << "Please input a size of array a1\n";	cin >> n;	a = new int[n];	cout << "\nPlease input elements of array\n";	for (int i = 0; i < n; i++)	{		cin >> a[i];	}	int sum = 0;	for (int i = 0; i < n; i++)	{		sum += a[i];	}	cout << "\nsum=" << sum << endl;	delete[] a;	return 0;}

@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Users\Mondeo\Desktop\Новая папка (2)\FileOperation.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Mondeo\Desktop\Новая папка (2)\InputOput.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Mondeo\Desktop\Новая папка (2)\MainProgram.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\Mondeo\Desktop\Новая папка (2)\FileOperation.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>

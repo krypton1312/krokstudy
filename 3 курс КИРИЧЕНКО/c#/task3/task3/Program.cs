@@ -6,40 +6,23 @@ namespace task3
     {
         static void Main()
         {
-            Int32 a, b, c;
+            Int32 a;
             Console.Write("Программа <");
-            cwr_magenta("Число");
-            Console.WriteLine(">. C.2023. Бурлаченко Егор");
+            cwr_magenta("Парное или нет?");
+            Console.WriteLine(">. C.2023. Бурлаченко Егор\n");
+            Console.WriteLine("Узнайте, является ли ваше число парным или нет, а так же заканчивается оно на 3 или же нет\n");
             try
             {
                 a = IntValue('a');
-                if (a % 2 == 0)
+                if (a < 0)
                 {
-                    cwr_blue(Convert.ToString(a));
-                    Console.Write(" / ");
-                    cwr_blue("2");
-                    Console.Write(" = ");
-                    b = a / 2;
-                    cwr_red(Convert.ToString(b));
-                    Console.Write("Число "); cwr_red(Convert.ToString(a)); Console.Write(" является парным");
-                    Console.ReadKey();
+                    a = a * -1;
+                    isnumbereven(a);
                 }
                 else
                 {
-                    if (a%10==3)
-                    {
-                        Console.Write("Число "); cwr_red(Convert.ToString(a)); Console.Write(" является не непарным и заканчивается на ");
-                        cwr_blue(Convert.ToString(3));
-                        Console.Write(".");
-                        Console.ReadKey();
-                    }
-                    else
-                    {
-                        Console.Write("Число "); cwr_red(Convert.ToString(a)); Console.Write(" является не непарным");
-                        Console.ReadKey();
-                    }
+                    isnumbereven(a);
                 }
-                
             }
             catch
             {
@@ -48,6 +31,49 @@ namespace task3
                 Console.ReadKey();
             }
            
+        }
+        static void isnumbereven(Int32 z)
+        {
+            int c = z / 2;
+            if (c % 2 == 0)
+            {
+                int b;
+                cwr_blue(Convert.ToString(c));
+                Console.Write(" / ");
+                cwr_blue("2");
+                Console.Write(" = ");
+                b = c / 2;
+                cwr_red(Convert.ToString(b)); Console.Write("\n");
+                Console.Write("Число "); cwr_red(Convert.ToString(c)); Console.Write(" является парным");
+                Console.ReadKey();
+            }
+            else
+            {
+                int b = z / 2;
+                if (b % 10 == 3)
+                {
+                    cwr_blue(Convert.ToString(z));
+                    Console.Write(" / ");
+                    cwr_blue("2");
+                    Console.Write(" = ");
+                    cwr_red(Convert.ToString(b)); Console.Write("\n");
+
+                    Console.Write("Число "); cwr_red(Convert.ToString(b)); Console.Write(" является не непарным и заканчивается на ");
+                    cwr_blue(Convert.ToString(3));
+                    Console.Write(".");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    cwr_blue(Convert.ToString(z));
+                    Console.Write(" / ");
+                    cwr_blue("2");
+                    Console.Write(" = ");
+                    cwr_red(Convert.ToString(b)); Console.Write("\n");
+                    Console.Write("Число "); cwr_red(Convert.ToString(b)); Console.Write(" является не непарным");
+                    Console.ReadKey();
+                }
+            }
         }
         static void cwr_magenta(String str)
         {

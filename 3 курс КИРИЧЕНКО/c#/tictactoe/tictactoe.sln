@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics", "Graphics\Graphics.csproj", "{4E3B21DD-007D-4365-80C7-0475050DE867}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tictactoe", "tictactoe\tictactoe.csproj", "{216A5653-4EF1-44E2-A26F-8D52F31BC942}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E3B21DD-007D-4365-80C7-0475050DE867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E3B21DD-007D-4365-80C7-0475050DE867}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E3B21DD-007D-4365-80C7-0475050DE867}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E3B21DD-007D-4365-80C7-0475050DE867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216A5653-4EF1-44E2-A26F-8D52F31BC942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216A5653-4EF1-44E2-A26F-8D52F31BC942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216A5653-4EF1-44E2-A26F-8D52F31BC942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216A5653-4EF1-44E2-A26F-8D52F31BC942}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2725B9CC-F020-4F59-89B0-42A30215CC54}
+		SolutionGuid = {D53F6241-A4EB-4015-B490-0D28BA7B652B}
 	EndGlobalSection
 EndGlobal

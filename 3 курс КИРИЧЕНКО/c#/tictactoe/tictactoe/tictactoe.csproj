@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E3B21DD-007D-4365-80C7-0475050DE867}</ProjectGuid>
+    <ProjectGuid>{216A5653-4EF1-44E2-A26F-8D52F31BC942}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Graphics</RootNamespace>
-    <AssemblyName>Graphics</AssemblyName>
+    <RootNamespace>tictactoe</RootNamespace>
+    <AssemblyName>tictactoe</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

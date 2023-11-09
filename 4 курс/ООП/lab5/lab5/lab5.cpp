@@ -49,19 +49,26 @@ public:
 int main()
 {
 	setlocale(LC_ALL, "ru");
+	try
+	{
+		Dollar dollar;
+		Euro euro;
+		Grivna grivna;
 
-	Dollar dollar;
-	Euro euro;
-	Grivna grivna;
-	
 
-	double rublAmount = 3893;
+		double rublAmount = 3893;
 
-	ExchangeService exchangeService;
-	double dollars = exchangeService.ConvertToCurrency(&dollar, rublAmount);
-	double euros = exchangeService.ConvertToCurrency(&euro, rublAmount);
-	double grivnas = exchangeService.ConvertToCurrency(&grivna, rublAmount);
-	
+		ExchangeService exchangeService;
+		double dollars = exchangeService.ConvertToCurrency(&dollar, rublAmount);
+		double euros = exchangeService.ConvertToCurrency(&euro, rublAmount);
+		double grivnas = exchangeService.ConvertToCurrency(&grivna, rublAmount);
+	}
+	catch (const std::exception& ex)
+	{
+		cout << ex.what() << endl;
+		cout << "произошла ошибка" << endl;
+	}
+
 
 	return 0;
 }
